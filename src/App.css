@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+
+input[type="text"] {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 24px;
+  direction: rtl;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+  background-color: #1862b1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.canvas{
+  border : "none";
+  background-color : white;
+  box-shadow: 15px 13px 19px 7px rgba(0,0,0,0.49);
+  -webkit-box-shadow: 15px 13px 19px 7px rgba(0,0,0,0.49);
+  -moz-box-shadow: 15px 13px 19px 7px rgba(0,0,0,0.49);
+  /* overflow: hidden; */
+  touch-action: none;
+  
+}
+option{
+  font-size: 20px;
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+.buttons{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  gap: 25px;
+}
+
+.buttons button{
+  padding: 5px 15px;
+  background-color: rgb(24, 56, 238);
   color: white;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.image-gallery img {
+  width: 10%; /* Adjust the width as needed */
+  /* height: 10%; */
+  margin: 5px; /* Add margin between images */
 }
+.selectOptions{
+  margin: 1.2vw;
+}
+/* @media only screen and (max-width: 768px) {
+  .canvas{
+    width: 350px;
+    height: 500px;
+  }
+  } */
+  /**********input******/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .input {
+    min-height: 50px;
+    max-width: 250px;
+    padding: 0 1rem;
+    color: #000000;
+    font-size: 15px;
+    border: 1px solid #5e4dcd;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
   }
-}
+  
+  .button--submit {
+    min-height: 50px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #5e4dcd;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .button--submit:hover {
+    background-color: #5e5dcd;
+  }
+  
+  .input:focus, .input:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+  }
